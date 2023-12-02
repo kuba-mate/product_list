@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj Produkt</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+    
+        form, a {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        
+
+    label,
+    input,
+    button {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    button{
+        margin-left: 90px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Dodaj produkt</h1>
+    <form action="/products/add" method="post">
+        <label for="name">Nazwa produktu</label>
+        <input type="text" id="name" name="name" required>
+        <label for="price">Cena produktu</label>
+        <input type="text" id="price" name="price" required>
+        <button type="submit">Dodaj produkt</button>
+    </form>
+    <a href="/products">Wróć do listy wszystkich produktów</a>
+</body>
+</html>

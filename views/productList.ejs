@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista produktów</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        tr{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        table{
+            width: 80%;
+            height: 300px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        #dodaj {
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            margin-top: 50px;
+            display: block; 
+        }
+
+
+        #dodaj:hover{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>LISTA PRODUKTÓW</h1>
+    <table border="1">
+        <tr>
+            <th> Nazwa </th>
+            <th> Link </th>
+        </tr>
+        <tbody>
+            <% products.forEach((product) => { %>
+                <tr>
+                    <td><%= product.name %></td>
+                    <td><a href="/products/<%= product.id %>">Sprawdź ofertę</a></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+    <a href="/products/add" id="dodaj">Dodaj produkt do listy</a>
+
+</body>
+</html>

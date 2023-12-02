@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Stolik IKEA",
+    "price": 19.99
+  },
+  {
+    "id": 2,
+    "name": "Syrop sodastream",
+    "price": 29.99
+  },
+  {
+    "id": 3,
+    "name": "Długopis",
+    "price": "5"
+  },
+  {
+    "id": 4,
+    "name": "Lalka",
+    "price": "7.99"
+  },
+  {
+    "id": 5,
+    "name": "Komputer ",
+    "price": "5999.99"
+  },
+  {
+    "id": 6,
+    "name": "Tablet",
+    "price": "1999.99"
+  }
+]
